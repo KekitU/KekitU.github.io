@@ -1,0 +1,72 @@
+:root {
+  --background-color: #1c1c1c;
+  --dark-background-color: #151515;
+  --muted-color: #c0c1c7;
+  --body-color: #8e919b;
+  --border-color: #424244;
+  --success-color: #1c9749;
+  --spacing-unit: 8px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--body-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: var(--spacing-unit);
+}
+
+h1, h2, h3 {
+  color: var(--muted-color);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: var(--spacing-unit);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: var(--spacing-unit * 2);
+  margin-bottom: var(--spacing-unit);
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: var(--spacing-unit * 1.5);
+  margin-bottom: var(--spacing-unit / 2);
+}
+
+p {
+  margin-bottom: var(--spacing-unit);
+}
+
+a {
+  color: var(--success-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: var(--spacing-unit / 2);
+}
+
+ul li a {
+  padding: var(--spacing-unit / 2);
+  display: inline-block;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--dark-background-color);
+}
+
+ul li a:hover {
+  background-color: var(--border-color);
+}
